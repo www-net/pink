@@ -14,7 +14,7 @@
     width: 160px;
     height: 62px;
 
-    background-image: linear-gradient(10deg, transparent, transparent 50%, white 50%, white);
+    background-image: linear-gradient(10deg, transparent, transparent 50%, $basic-white 50%, $basic-white);
 
     z-index: 2;
   }
@@ -29,11 +29,10 @@
     width: 160px;
     height: 62px;
 
-    background-image: linear-gradient(-10deg, transparent, transparent 50%, white 50%, white);
+    background-image: linear-gradient(-10deg, transparent, transparent 50%, $basic-white 50%, $basic-white);
 
     z-index: 2;
   }
-
 }
 
 .map__map-wrapper {
@@ -53,7 +52,6 @@
     border: 10px solid $basic-white;
     background-color: $pink-color;
   }
-
 }
 
 .map__img {

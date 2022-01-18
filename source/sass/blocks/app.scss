@@ -4,12 +4,12 @@
   text-align: center;
 
   background-color: $dark-blue;
-  background-image: url(../img/app/app_background.jpg);
+  background-image: url("../img/app/app_background.jpg");
   background-repeat: no-repeat;
   background-position: 0 -60px;
 
   @media (min-width: $tablet-width) {
-    background-image: url(../img/app/app_background_tablet.jpg);
+    background-image: url("../img/app/app_background_tablet.jpg");
     background-position: 0 -110px;
   }
 
