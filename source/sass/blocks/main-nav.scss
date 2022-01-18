@@ -1,0 +1,160 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -42px;
+  right: 20px;
+
+  display: block;
+  width: 50px;
+  height: 24px;
+  background-color: $dark-gray;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  border-radius: 1px;
+  background-color: $basic-white;
+  box-shadow: 0 10px 0 0 $basic-white, 0 20px 0 0 $basic-white;
+
+  &:hover::before,
+  &:focus::before {
+    background-color: $pink-color;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    right: -3px;
+    width: 30px;
+    height: 3px;
+    background-color: $basic-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: $pink-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 620px;
+  }
+}
+
+.main-nav__item {
+  box-shadow: 0 -1px 0 0 black;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: none;
+  }
+
+  &:active {
+    position: relative;
+    &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: $basic-white;
+    }
+  }
+}
+
+.main-nav__link {
+  position: relative;
+
+  display: block;
+  padding: 15px 0;
+
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $basic-white;
+
+  background-color: $dark-gray;
+
+  border-top: 1px solid rgba(#ffffff, 15%);
+  border-bottom: 1px solid black;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: none;
+
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.main-nav__item a[href] {
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $pink-color;
+    }
+  }
+}

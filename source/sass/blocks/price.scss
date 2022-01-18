@@ -1,0 +1,137 @@
+.price {
+  overflow: hidden;
+
+  background-image: url(../img/background.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.price__table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 33px;
+  padding-top: 127px;
+
+  border-collapse: collapse;
+}
+
+.price__name {
+  box-sizing: border-box;
+  min-width: 280px;
+  padding: 13px 20px 28px;
+
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: $basic-white;
+
+  background-color: $dark-gray;
+  border-right: 2px solid $white-gray;
+  border-left: 2px solid $white-gray;
+}
+
+.price__tariff-cost {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.price__tariff-empty {
+  @media(max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.price__value {
+  box-sizing: border-box;
+  min-width: 280px;
+
+  border: 2px solid $white-gray;
+  background-color: $basic-white;
+
+  @media(max-width: $mobile-width-only) {
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
+.price__value {
+  position: relative;
+  &--positive {
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 22px;
+      right: 16px;
+
+      width: 31px;
+      height: 21px;
+
+      background-image: url(../img/price/yes.svg);
+
+      @media(max-width: $mobile-width-only) {
+
+      }
+    }
+  }
+
+  &--negative {
+    &::before {
+      content: "";
+
+    position: absolute;
+    top: 22px;
+    right: 18px;
+
+    width: 27px;
+    height: 27px;
+
+    background-image: url(../img/price/no.svg);
+    }
+  }
+}
+
+.price-value-mobile {
+  padding: 13px 20px;
+
+  line-height: 30px;
+  text-transform: uppercase;
+
+  @media(max-width: $mobile-width-only) {
+    display: inline-block;
+  }
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price__toggles {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 45px;
+
+  list-style: none;
+}
+
+.price__button {
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $dark-gray--30 ;
+
+  &--current {
+    border: 3px solid $dark-gray;
+    background-color: $basic-white;
+  }
+}

@@ -1,0 +1,51 @@
+.information {
+  position: relative;
+
+  text-align: center;
+
+  background-image: url(../img/grey_background.png);
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+}
+
+.information__img-wrapper {
+  position: relative;
+
+  width: 157px;
+  height: 320px;
+  margin: auto;
+
+  overflow: hidden;
+}
+
+.information-img {
+  position: absolute;
+
+  bottom: -40px;
+  left: 0px;
+}
+
+.information__slogans {
+
+  margin-bottom: 120px;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+}
+
+.information__paragraph {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.information__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.information__title {
+  font-size: 18px;
+}

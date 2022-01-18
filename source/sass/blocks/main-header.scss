@@ -1,0 +1,59 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 320px;
+  margin: auto;
+
+  color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+
+    width: 960px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    background-image: url("../img/app/app_background_desktop.jpg");
+  }
+}
+
+
+.main-header__wrapper {
+  background-color: $dark-gray;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+  }
+}
+
+
+.main-header__logo {
+  width: 74px;
+  height: 23px;
+  margin: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+
+

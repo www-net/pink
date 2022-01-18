@@ -1,0 +1,46 @@
+.reviews {
+  margin-bottom: 40px;
+
+  text-align: center;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews-title {
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+
+  margin: 0;
+  padding: 0;
+
+
+  list-style: none;
+}
+
+.reviews__button {
+  width: 6px;
+  height: 6px;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $dark-gray--30;
+}
+
+.reviews__button--current {
+  border: 3px solid $basic-black;
+  background-color: $basic-white;
+}

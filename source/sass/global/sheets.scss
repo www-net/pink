@@ -1,0 +1,16 @@
+//mobile
+
+
+//tablet
+@media (min-width: $tablet-width) {
+  .page__body {
+    width: 660px;
+  }
+}
+
+//Desktop
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1200px;
+  }
+}

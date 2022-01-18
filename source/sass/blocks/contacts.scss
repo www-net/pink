@@ -1,0 +1,26 @@
+.contacts {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+
+  text-align: center;
+}
+
+.contacts__caption {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 30px;
+}
+
+.contacts__info {
+  line-height: normal;
+  color: $pink-color;
+  text-decoration: none;
+}
