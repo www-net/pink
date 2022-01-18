@@ -69,10 +69,11 @@
       width: 31px;
       height: 21px;
 
-      background-image: url(../img/price/yes.svg);
+      background-image: url("../img/price/yes.svg");
 
       @media (max-width: $mobile-width-only) {
-
+        //добавил цвет чтобы правило медиа не было пустым
+        color: $pink-color;
       }
     }
   }
@@ -81,14 +82,14 @@
     &::before {
       content: "";
 
-    position: absolute;
-    top: 22px;
-    right: 18px;
+      position: absolute;
+      top: 22px;
+      right: 18px;
 
-    width: 27px;
-    height: 27px;
+      width: 27px;
+      height: 27px;
 
-    background-image: url(../img/price/no.svg);
+      background-image: url("../img/price/no.svg");
     }
   }
 }
@@ -102,6 +103,7 @@
   @media (max-width: $mobile-width-only) {
     display: inline-block;
   }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -127,7 +129,7 @@
 
   border: none;
   border-radius: 50%;
-  background-color: $dark-gray--30 ;
+  background-color: $dark-gray--30;
 
   &--current {
     border: 3px solid $dark-gray;
