@@ -26,10 +26,10 @@
 
 .price__wrapper {
   @media (min-width: $tablet-width) {
-  box-sizing: border-box;
-  width: 620px;
-  margin: 0 auto;
-  overflow: hidden;
+    box-sizing: border-box;
+    width: 620px;
+    margin: 0 auto;
+    overflow: hidden;
   }
 }
 
@@ -75,6 +75,7 @@
 
   &--bestseller {
     position: relative;
+
     &::before {
       content: "";
 

@@ -32,7 +32,6 @@
     margin-bottom: 0;
 
     font-size: 40px;
-
   }
 }
 
@@ -44,7 +43,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 300px 1fr;
-    column-gap : 10px;
+    column-gap: 10px;
 
     background-image: url("../img/information/info_grey_background_tablet.svg");
     background-repeat: no-repeat;
@@ -93,7 +92,7 @@
   margin: 0;
   padding: 0;
 
-  @media (max-width: $mobile-width-only ) {
+  @media (max-width: $mobile-width-only) {
     br {
       display: none;
     }
