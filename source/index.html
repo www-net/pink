@@ -12,7 +12,7 @@
   <header class="main-header">
       <div class="main-header__wrapper">
         <div class="main-header__logo">
-          <img class="main-header__img" src="img/pink.svg" width="74" height="23" alt="Логотип pink">
+          <img class="main-header__img" src="img/header/pink_mobile.svg" width="74" height="23" alt="Логотип pink">
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -24,53 +24,69 @@
           </ul>
         </nav>
       </div>
-    <section class="app container">
-      <h2 class="app__title">Взгляните<br> на жизнь<br> иначе!</h2>
+    <section class="app">
+      <div class="app__wrapper">
+        <h2 class="app__title">Взгляните<br> на жизнь<br> иначе!</h2>
+        <img class="app__img" src="../img/app/pink_screen_mobile.png" width="320" height="286" alt="Мобилный с розовой картинкой на дисплее">
       <button class="app__button">Скачать приложение</button>
       <ul class="app__list">
-        <li class="app__item"><a class="app__link-apple" href="#"></a></li>
-        <li class="app__item"><a class="app__link-android" href="#"></a></li>
-        <li class="app__item"><a class="app__link-microsoft" href="#"></a></li>
+        <li class="app__item"><a class="app__link app__link-apple" href="#"></a></li>
+        <li class="app__item"><a class="app__link app__link-android" href="#"></a></li>
+        <li class="app__item"><a class="app__link app__link-microsoft" href="#"></a></li>
       </ul>
       <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница приложения "pink"</h1>
 
-    <section class="information container">
+    <section class="information">
       <h2 class="visually-hidden">Особенности</h2>
       <div class="information__slogans">
         <p class="information__paragraph">Устали от серости мегаполиса?</p>
-        <p class="information__paragraph">Нам есть, что вам предложить!</p>
+        <p class="information__paragraph">Нам есть, что вам<br> предложить!</p>
       </div>
-      <ul class="information__list">
-        <li class="information__item">
-          <h3 class="information__title">Поднимает настроение</h3>
-          <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-            кликов!</p>
-        </li>
-        <li class="information__item">
-          <h3 class="information__title">Меняет мир вокруг</h3>
-          <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          </p>
-        </li>
-        <li class="information__item">
-          <h3 class="information-title">Заводит новых друзей</h3>
-          <p class="information-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <div class="information__img-wrapper">
-        <img class="information-img" src="img/information_phone.jpg" alt="">
+      <div class="information__wrapper">
+        <ul class="information__list">
+          <li class="information__item">
+            <h3 class="information__title">Поднимает настроение</h3>
+            <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+              кликов!</p>
+          </li>
+          <li class="information__item">
+            <h3 class="information__title">Меняет мир вокруг</h3>
+            <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект
+            </p>
+          </li>
+          <li class="information__item">
+            <h3 class="information__title">Заводит новых друзей</h3>
+            <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="information__img-wrapper">
+          <img class="information-img" src="img/information/info_phone.jpg" alt="">
+        </div>
       </div>
     </section>
 
-    <section class="reviews container">
+    <section class="banner container">
+      <h2 class="visually-hidden">Результаты исследований</h2>
+      <img src="img/banner/banner_timer_tablet.svg" width="238" height="276" alt="">
+      <div class="banner__wrapper">
+        <h3 class="banner__title">Эффект<br> на 24 часа!</h3>
+        <p class="banner__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+        <a class="banner__link" href="#">Узнать больше об исследовании</a>
+      </div>
+    </section>
+
+    <section class="reviews slider container">
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="reviews__list">
         <blockquote class="reviews__item">
           <cite class="reviews-title">Николай Петров</cite>
+          <p class="reviews__function">25 лет, водитель трамвая</p>
           <p class="reviews__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -92,89 +108,92 @@
       </ul>
     </section>
 
-    <section class="price container">
-      <h2 class="visually-hidden">Тарифы</h2>
+    <section class="price">
+      <div class="price__wrapper">
+        <h2 class="visually-hidden">Тарифы</h2>
 
-      <table class="price__table">
-        <thead>
-          <tr class="price__tariffs">
-            <th class="price__tariff-empty"></th>
-            <th class="price__name">База&#160;<br>
-              <span class="price__tariff-cost">1,99 USD</span>
-            </th>
-            <th class="price__name price__name--bestseller">Стандарт<br>
-              <span class="price__tariff-cost">3,99 USD</span>
-            </th>
-            <th class="price__name">Анлим<br>
-              <span class="price__tariff-cost">9,99 USD</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="price__value">Розовый фильтр</td>
-            <td class="price__value price__value--positive"><span class="price-value-mobile">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
-            <td class="price__value price__value--positive"><span class="price-value-mobile">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
-            <td class="price__value price__value--positive"><span class="price-value-mobile">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
-          </tr>
-          <tr>
-            <td class="price__value">Смайлики</td>
-            <td class="price__value price__value--negative"><span class="price-value-mobile">Смайлики</span><span class="visually-hidden">Нет</span></td>
-            <td class="price__value price__value--positive"><span class="price-value-mobile">Смайлики</span><span class="visually-hidden">Да</span></td>
-            <td class="price__value price__value--positive"><span class="price-value-mobile">Смайлики</span><span class="visually-hidden">Да</span></td>
-          </tr>
-          <tr>
-            <td class="price__value">Комментарии</td>
-            <td class="price__value price__value--negative"><span class="price-value-mobile">Комментарии</span><span class="visually-hidden">Нет</span></td>
-            <td class="price__value price__value--negative"><span class="price-value-mobile">Комментарии</span><span class="visually-hidden">Нет</span></td>
-            <td class="price__value price__value--positive"><span class="price-value-mobile">Комментарии</span><span class="visually-hidden">Да</span></td>
-          </tr>
-        </tbody>
-      </table>
+        <table class="price__table">
+          <thead class="price__thead">
+            <tr class="price__tariffs">
+              <th class="price__tariff-empty"></th>
+              <th class="price__name">База&#160;<br>
+                <span class="price__tariff-cost">1,99 USD</span>
+              </th>
+              <th class="price__name price__name--bestseller">Стандарт<br>
+                <span class="price__tariff-cost">3,99 USD</span>
+              </th>
+              <th class="price__name">Анлим<br>
+                <span class="price__tariff-cost">9,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="price__value">Розовый фильтр</td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Розовый фильтр</span><span class="visually-hidden">Да</span></td>
+            </tr>
+            <tr>
+              <td class="price__value">Смайлики</td>
+              <td class="price__value price__value--negative"><span class="price__value-mobile">Смайлики</span><span class="visually-hidden">Нет</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Смайлики</span><span class="visually-hidden">Да</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Смайлики</span><span class="visually-hidden">Да</span></td>
+            </tr>
+            <tr>
+              <td class="price__value">Комментарии</td>
+              <td class="price__value price__value--negative"><span class="price__value-mobile">Комментарии</span><span class="visually-hidden">Нет</span></td>
+              <td class="price__value price__value--negative"><span class="price__value-mobile">Комментарии</span><span class="visually-hidden">Нет</span></td>
+              <td class="price__value price__value--positive"><span class="price__value-mobile">Комментарии</span><span class="visually-hidden">Да</span></td>
+            </tr>
+          </tbody>
+        </table>
 
-      <ul class="price__toggles">
-        <li class="price__toggle">
-          <button class="price__button" type="button"></button>
-        </li>
-        <li class="price__toggle">
-          <button class="price__button price__button--current" type="button"></button>
-        </li>
-        <li class="price__toggle">
-          <button class="price__button" type="button"></button>
-        </li>
-      </ul>
+        <ul class="price__toggles">
+          <li class="price__toggle">
+            <button class="price__button" type="button"></button>
+          </li>
+          <li class="price__toggle">
+            <button class="price__button price__button--current" type="button"></button>
+          </li>
+          <li class="price__toggle">
+            <button class="price__button" type="button"></button>
+          </li>
+        </ul>
+      </div>
     </section>
-  </main>
 
-  <section class="contacts container">
-    <h2 class="visually-hidden">Контакты</h2>
-    <p class="contacts__us">Остались вопросы? Свяжитесь с нами!</p>
+    <section class="contacts container">
+      <h2 class="visually-hidden">Контакты</h2>
+      <p class="contacts__questions">Остались вопросы? Свяжитесь с нами!</p>
       <div class="contacts__item">
-        <b class="contacts__caption">Звоните</b>
+        <b class="contacts__caption">Звоните:</b>
         <a class="contacts__info" href="tel:+7812555666">+7 (812) 555-66-66</a>
       </div>
       <div class="contacts__item">
-        <b class="contacts__caption">Пишите</b>
+        <b class="contacts__caption">Пишите:</b>
         <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div class="contacts__item">
         <b class="contacts__caption">Приезжайте в гости:</b>
         <adress class="contacts__info">ул. Большая Конюшенная, 19/8</adress>
       </div>
-  </section>
+    </section>
 
-  <div class="map">
-    <h2 class="visually-hidden">Карта</h2>
-    <div class="map__map-wrapper">
-      <img class="map__img" src="../img/map.png">
-      <div class="map__interactive-wrapper">
-        <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323873%2C59.938625&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CCUyJHe4wB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    <div class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="map__map-wrapper">
+        <img class="map__img" src="../img/map.png">
+        <div class="map__interactive-wrapper">
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323873%2C59.938625&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CCUyJHe4wB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
       </div>
     </div>
+  </main>
 
   <footer class="main-footer container">
     <div class="main-footer__logo">
-      <img class="main-footer__img " src="img/footer/logotype-blue-tablet.svg" alt="">
+      <img class="main-footer__img" width="145" height="40" src="img/footer/logotype-blue-tablet.svg" alt="">
     </div>
     <ul class="main-footer__list">
       <li class="main-footer__item">
@@ -188,7 +207,7 @@
       </li>
     </ul>
     <div class="main-footer__copyright">
-      <b>Разработано</b>
+      <b class="main-footer__title">Разработано</b>
       <div class="main-footer__logo-academy">
         <a class="main-footer__academy-link" href="#"><img class="main-footer__academy-img" src="img/footer/html_academy.svg" alt=""></a>
       </div>

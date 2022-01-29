@@ -4,8 +4,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -42px;
-  right: 20px;
+  top: -47px;
+  right: 19px;
 
   display: block;
   width: 50px;
@@ -13,6 +13,10 @@
   background-color: $dark-gray;
   cursor: pointer;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    top: -67px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;

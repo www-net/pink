@@ -1,0 +1,46 @@
+.banner {
+  @media (max-width: $mobile-width-only ) {
+    display: none;
+  }
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  max-width: 640px;
+  margin-bottom: 100px;
+}
+
+.banner__wrapper {
+  box-sizing: border-box;
+  width: 310px;
+  padding-right: 10px;
+}
+
+.banner__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-top: 42px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.banner__text {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.banner__link {
+  color: $pink-color;
+  text-decoration: underline;
+}

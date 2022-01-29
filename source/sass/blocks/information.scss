@@ -1,51 +1,123 @@
 .information {
   position: relative;
 
+  width: 320px;
+  margin: auto;
+  margin-bottom: 41px;
   text-align: center;
 
-  background-image: url("../img/grey_background.png");
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    margin-bottom: 54px;
+  }
+}
+
+.information__slogans {
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+
+  @media (min-width: $tablet-width) {
+    line-height: 225%;
+  }
+}
+
+.information__paragraph {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    font-size: 40px;
+
+  }
+}
+
+.information__wrapper {
+  background-image: url("../img/information/info_grey_background.svg");
   background-repeat: no-repeat;
-  background-position: 0 bottom;
+  background-position: 0 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap : 10px;
+
+    background-image: url("../img/information/info_grey_background_tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+  }
+}
+
+.information__list {
+  margin: 0 20px;
+  padding: 0;
+  padding-top: 82px;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+
+    padding-top: 105px;
+    padding-bottom: 41px;
+
+    text-align: start;
+  }
+}
+
+.information__item {
+  margin-bottom: 31px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.information__title {
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+
+  font-size: 18px;
+}
+
+.information__text {
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mobile-width-only ) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .information__img-wrapper {
   position: relative;
 
   width: 157px;
-  height: 320px;
+  height: 227px;
   margin: auto;
-
+  padding-top: 91px;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .information-img {
   position: absolute;
 
-  bottom: -40px;
+  bottom: -43px;
   left: 0;
-}
-
-.information__slogans {
-
-  margin-bottom: 120px;
-
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 120%;
-}
-
-.information__paragraph {
-  margin: 0;
-  margin-bottom: 30px;
-}
-
-.information__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.information__title {
-  font-size: 18px;
 }
