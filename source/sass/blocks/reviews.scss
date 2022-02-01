@@ -1,12 +1,13 @@
 .reviews {
   box-sizing: border-box;
   width: 320px;
-  margin-bottom: 7px;
+  padding-top: 41px;
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 660px;
+    padding-top: 100px;
   }
 }
 

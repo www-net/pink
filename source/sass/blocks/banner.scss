@@ -8,7 +8,10 @@
   flex-wrap: wrap;
 
   max-width: 640px;
-  margin-bottom: 100px;
+}
+
+.banner__img {
+  margin-top: 54px;
 }
 
 .banner__wrapper {
@@ -21,7 +24,7 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
-  padding-top: 42px;
+  padding-top: 96px;
 
   font-size: 30px;
   font-weight: 700;
