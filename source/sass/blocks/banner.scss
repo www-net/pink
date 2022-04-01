@@ -1,13 +1,31 @@
 .banner {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-color: $smoky-color;
+  }
+}
 
-  max-width: 640px;
+.banner__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:72px;
+
+    padding: 0 10px;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .banner__img {
@@ -18,6 +36,10 @@
   box-sizing: border-box;
   width: 310px;
   padding-right: 10px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .banner__title {

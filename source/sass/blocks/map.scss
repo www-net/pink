@@ -5,6 +5,16 @@
   margin: auto;
   padding-top: 16px;
 
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 374px;
+    padding-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+
   &::before {
     content: "";
 
@@ -24,6 +34,13 @@
 
       width: 330px;
       height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 4px;
+
+      width: 50%;
+      height: 123px;
     }
   }
 
@@ -47,12 +64,13 @@
       width: 330px;
       height: 68px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    width: 660px;
-    height: 374px;
-    padding-top: 4px;
+    @media (min-width: $desktop-width) {
+      top: 4px;
+
+      width: 50%;
+      height: 123px;
+    }
   }
 }
 
@@ -73,9 +91,15 @@
     border: 10px solid $basic-white;
     background-color: $pink-color;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .map__img {
+  display: block;
+
   margin: auto;
 }
 
@@ -83,6 +107,10 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .map__interactive {
@@ -98,5 +126,9 @@
     max-height: none;
     width: 660px;
     height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }

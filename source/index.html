@@ -11,23 +11,31 @@
 <body class="page__body">
   <header class="main-header">
       <div class="main-header__wrapper">
-        <div class="main-header__logo">
-          <img class="main-header__img" src="img/header/pink_mobile.svg" width="74" height="23" alt="Логотип pink">
+        <div class="main-header__container">
+          <div class="main-header__logo">
+            <img class="main-header__img" src="img/header/pink_mobile.svg" width="74" height="23" alt="Логотип pink">
+          </div>
+          <nav class="main-nav main-nav--opened main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="#">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Html academy</a></li>
-          </ul>
-        </nav>
       </div>
     <section class="app">
       <div class="app__wrapper">
         <h2 class="app__title">Взгляните<br> на жизнь<br> иначе!</h2>
-        <img class="app__img" src="../img/app/pink_screen_mobile.png" width="320" height="286" alt="Мобилный с розовой картинкой на дисплее">
+        <div class="app__img-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="/img/app/pink_screen_desktop@1x.png 1x, /img/app/pink_screen_desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="/img/app/pink_screen_tablet@1x.png 1x, /img/app/pink_screen_tablet@2x.png 2x">
+            <img class="app__img" src="/img/app/pink_screen_mobile@1x.png" srcset="/img/app/pink_screen_mobile@2x.png 2x" alt="Мобилный с розовой картинкой на дисплее">
+          </picture>
+        </div>
       <button class="app__button">Скачать приложение</button>
       <ul class="app__list">
         <li class="app__item"><a class="app__link app__link-apple" href="#"></a></li>
@@ -43,41 +51,55 @@
     <h1 class="visually-hidden">Главная страница приложения "pink"</h1>
 
     <section class="information">
-      <h2 class="visually-hidden">Особенности</h2>
-      <div class="information__slogans">
-        <p class="information__paragraph">Устали от серости мегаполиса?</p>
-        <p class="information__paragraph">Нам есть, что вам<br> предложить!</p>
-      </div>
-      <div class="information__wrapper">
-        <ul class="information__list">
-          <li class="information__item">
-            <h3 class="information__title">Поднимает настроение</h3>
-            <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-              кликов!</p>
-          </li>
-          <li class="information__item">
-            <h3 class="information__title">Меняет мир вокруг</h3>
-            <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект
-            </p>
-          </li>
-          <li class="information__item">
-            <h3 class="information__title">Заводит новых друзей</h3>
-            <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="information__img-wrapper">
-          <img class="information-img" src="img/information/info_phone.jpg" alt="">
+        <h2 class="visually-hidden">Особенности</h2>
+        <div class="information__slogans">
+          <p class="information__paragraph">Устали от серости мегаполиса?</p>
+          <p class="information__paragraph">Нам есть, что вам<br> предложить!</p>
         </div>
-      </div>
+        <div class="information__wrapper">
+          <div class="information__img-wrapper">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/information/iphone-screen-tablet@1x.png 1x, img/information/iphone-screen-tablet@2x.png 2x">
+              <img class="information-img" src="img/information/iphone-screen-mobile@1x.png" srcset="img/information/iphone-screen-mobile@2x.png 2x" alt="">
+            </picture>
+          </div>
+          <ul class="information__list">
+            <li class="information__item">
+              <h3 class="information__title">Поднимает настроение</h3>
+              <div class="inforemation__desktop-image">
+                <img class="information__phone-img" src="img/information/iphone-screen-1-desktop@1x.png" srcset="img/information/iphone-screen-1-desktop@2x.png 2x" alt="телефон с серым экраном">
+              </div>
+              <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+                кликов!</p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__title">Меняет мир вокруг</h3>
+              <div class="inforemation__desktop-image">
+                  <img class="information__phone-img" src="img/information/iphone-screen-2-desktop@1x.png" srcset="img/information/iphone-screen-2-desktop@2x.png 2x" alt="телефон с розовым экраном">
+              </div>
+              <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект
+              </p>
+            </li>
+            <li class="information__item">
+              <h3 class="information__title">Заводит новых друзей</h3>
+              <div class="inforemation__desktop-image">
+                <img class="information__phone-img" src="img/information/iphone-screen-3-desktop@1x.png" srcset="img/information/iphone-screen-3-desktop@2x.png 2x" alt="телефон с розовым экраном и улыбающимся смайлом">
+              </div>
+              <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
     </section>
 
-    <section class="banner container">
-      <h2 class="visually-hidden">Результаты исследований</h2>
-      <img class="banner__img" src="img/banner/banner_timer_tablet.svg" width="238" height="276" alt="">
-      <div class="banner__wrapper">
-        <h3 class="banner__title">Эффект<br> на 24 часа!</h3>
-        <p class="banner__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
-        <a class="banner__link" href="#">Узнать больше об исследовании</a>
+    <section class="banner">
+      <div class="banner__container">
+        <h2 class="visually-hidden">Результаты исследований</h2>
+          <img class="banner__img" src="img/banner/banner_timer_tablet.svg" width="238" height="276" alt="">
+        <div class="banner__wrapper">
+          <h3 class="banner__title">Эффект<br> на 24 часа!</h3>
+          <p class="banner__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+          <a class="banner__link" href="#">Узнать больше об исследовании</a>
+        </div>
       </div>
     </section>
 
@@ -195,21 +217,21 @@
     <div class="main-footer__logo">
       <img class="main-footer__img" width="145" height="40" src="img/footer/logotype-blue-tablet.svg" alt="">
     </div>
-    <ul class="main-footer__list">
-      <li class="main-footer__item">
-        <a class="main-footer__social main-footer__social--twitter" href="#"></a>
+    <ul class="main-footer__list social">
+      <li class="social__item">
+        <a class="social-link social__link--twitter" href="#"></a>
       </li>
       <li class="main-footer__item">
-        <a class="main-footer__social main-footer__social--facebook" href="#"></a>
+        <a class="social-link social__link--facebook" href="#"></a>
       </li>
       <li class="main-footer__item">
-        <a class="main-footer__social main-footer__social--youtube" href="#"></a>
+        <a class="social-link social__link--youtube" href="#"></a>
       </li>
     </ul>
-    <div class="main-footer__copyright">
-      <b class="main-footer__title">Разработано</b>
-      <div class="main-footer__logo-academy">
-        <a class="main-footer__academy-link" href="#"><img class="main-footer__academy-img" src="img/footer/html_academy.svg" alt=""></a>
+    <div class="main-footer__copyright copyright">
+      <b class="copyright__title">Разработано</b>
+      <div class="copyright__logo-academy">
+        <a class="copyright__academy-link" href="#"><img class="main-footer__academy-img" src="img/footer/html_academy.svg" alt=""></a>
       </div>
     </div>
   </footer>

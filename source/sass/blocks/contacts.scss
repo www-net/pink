@@ -16,6 +16,10 @@
     width: 660px;
     padding-top: 44px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
 }
 
 .contacts__questions {
@@ -34,6 +38,11 @@
 
     font-size: 40px;
     line-height: 135%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    padding: 0 230px;
   }
 }
 

@@ -91,10 +91,7 @@
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include reset-list ();
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -128,7 +125,6 @@
 }
 
 .main-nav__link {
-  position: relative;
 
   display: block;
   padding: 15px 0;
@@ -147,6 +143,8 @@
   border-bottom: 1px solid $basic-black;
 
   @media (min-width: $desktop-width) {
+    padding: 46px 0;
+
     font-weight: 400;
     line-height: 18px;
     text-transform: none;

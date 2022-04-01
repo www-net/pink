@@ -9,6 +9,12 @@
     width: 660px;
     padding-top: 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .reviews__item {

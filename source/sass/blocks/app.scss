@@ -5,26 +5,45 @@
   background-color: $dark-blue;
   background-image: url("../img/app/app_background_mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -67px;
+  background-position: center -67px;
+  background-size: 320px 462px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/app/app_background_mobile2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/app/app_background_tablet.jpg");
-    background-position: 0 -110px;
+    min-height: 618px;
+
+    background-image: url("../img/app/app_background_tablet@1x.jpg");
+    background-position: center bottom;
+    background-size: 1200px 729px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/app/app_background_tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 853px;
+
     background-image: none;
     background-color: transparent;
-    background-position: center;
-    background-size: cover;
   }
 }
 
 .app__wrapper {
+  z-index: 10;
+
   @media (min-width: $tablet-width) {
     max-width: 300px;
     margin-top: 93px;
     margin-left: 20px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 370px;
   }
 }
 
@@ -44,19 +63,30 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     margin-bottom: 30px;
 
     font-size: 40px;
   }
 }
 
-.app__img {
-  margin-bottom: 21px;
-
+.app__img-wrapper {
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: -73px;
+    right: -20px;
+
+    width: 700px;
+    height:618px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 110px;
+    right: -806px;
+
+    width: 1050px;
+    height: 645px;
   }
 }
 
@@ -77,14 +107,20 @@
   border-radius: 50px;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     min-width: 300px;
 
     margin-bottom: 46px;
     background-color: transparent;
+
+    z-index: 2;
   }
 }
 
 .app__list {
+  @include reset-list;
+
   display: flex;
   flex-wrap: wrap;
   align-items: end;
@@ -94,10 +130,6 @@
   min-height: 56px;
   margin: 0 auto;
   margin-bottom: 22px;
-
-  padding: 0;
-
-  list-style: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
@@ -176,9 +208,12 @@
   font-weight: 300;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     padding: 0;
-    padding-bottom: 83px;
 
     font-size: 18px;
+
+    z-index: 2;
   }
 }
