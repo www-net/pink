@@ -1,0 +1,56 @@
+.logo {
+  display: block;
+  width: 74px;
+  height: 23px;
+
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.logo:hover path {
+  fill: $pink-color;
+}
+
+.logo:active path {
+  fill: $basic-white;
+  opacity: 0.3;
+}
+
+.logo__svg {
+  margin-top: -17px;
+  margin-left: -72px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.logo__tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+    display: block;
+  }
+}
+
+.logo__desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
