@@ -224,15 +224,24 @@
       </div>
     </section>
 
-    <div class="map">
+    <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <div class="map__map-wrapper">
-        <img class="map__img" src="../img/map.png">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/map/map_desktop@1x.webp 1x, img/map/map_desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 600px)" srcset="img/map/map_tablet@1x.webp 1x, img/map/map_tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map/map_mobile@1x.webp 1x, img/map/map_mobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" srcset="img/map/map_desktop@1x.png 1x, img/map/map_desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/map/map_tablet@1x.png 1x, img/map/map_tablet@2x.png 2x">
+          <img class="map__img" src="img/map_mobile@1x.png" srcset="img/map_mobile@2x.png 2x" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </picture>
+
         <div class="map__interactive-wrapper">
           <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323873%2C59.938625&utm_medium=mapframe&utm_source=maps&z=17.09" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a><iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CCUyJHe4wB" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="main-footer container">
@@ -241,10 +250,10 @@
     </div>
     <ul class="main-footer__list social">
       <li class="social__item">
-        <a class="social-link social__link--twitter" href="#"></a>
+        <a class="social-link social__link--youtube" href="#"></a>
       </li>
       <li class="main-footer__item">
-        <a class="social-link social__link--facebook" href="#"></a>
+        <a class="social-link social__link--youtube" href="#"></a>
       </li>
       <li class="main-footer__item">
         <a class="social-link social__link--youtube" href="#"></a>
@@ -253,7 +262,9 @@
     <div class="main-footer__copyright copyright">
       <b class="copyright__title">Разработано</b>
       <div class="copyright__logo-academy">
-        <a class="copyright__academy-link" href="#"><img class="main-footer__academy-img" src="img/footer/html_academy.svg" alt=""></a>
+        <a class="copyright__academy-link" href="#">
+          <img class="main-footer__academy-img" src="img/footer/html_academy.svg" alt="">
+        </a>
       </div>
     </div>
   </footer>

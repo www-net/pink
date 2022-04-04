@@ -1,12 +1,13 @@
 .banner {
   display: none;
+  margin: auto;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 1200px;
     background-color: $smoky-color;
   }
 }
