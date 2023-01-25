@@ -110,17 +110,7 @@
   }
 }
 
-.main-nav__link {
-  @media (min-width: $desktop-width) {
-    &:hover {
-      color: $pink-color;
-    }
-
-    &:active {
-      color: $basic-half-white;
-    }
-  }
-}
+.main-nav__link {}
 
 
 .main-nav__item--active {
@@ -165,5 +155,13 @@
 
     background-color: transparent;
     border: none;
+
+    &:hover {
+      color: $pink-color;
+    }
+
+    &:active {
+      color: $basic-half-white;
+    }
   }
 }
