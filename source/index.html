@@ -119,7 +119,11 @@
     <section class="banner">
       <div class="banner__container">
         <h2 class="visually-hidden">Результаты исследований</h2>
-          <img class="banner__img" src="img/banner/banner_timer_tablet.svg" width="238" height="276" alt="">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/banner/banner_timer_desktop.svg">
+          <img class="banner__img" src="img/banner/banner_timer_tablet.svg"  alt="секундомер">
+        </picture>
+
         <div class="banner__wrapper">
           <h3 class="banner__title">Эффект<br> на 24 часа!</h3>
           <p class="banner__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>

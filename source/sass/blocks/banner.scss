@@ -8,6 +8,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    padding-bottom: 60px;
+
     background-color: $smoky-color;
   }
 }
@@ -30,7 +32,7 @@
 }
 
 .banner__img {
-  margin-top: 54px;
+  margin-top: 28px;
 }
 
 .banner__wrapper {
@@ -52,6 +54,17 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    padding-top: 118px;
+
+    font-size: 31px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .banner__text {
@@ -64,9 +77,26 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 500px;
+    margin-bottom: 30px;
+
+    line-height: 30px;
+    font-size: 18px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .banner__link {
   color: $pink-color;
   text-decoration: underline;
+
+  @media (min-width: $desktop-width ) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
