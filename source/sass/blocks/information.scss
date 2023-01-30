@@ -14,7 +14,7 @@
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     width: 1200px;
-    padding: 47px 10px 0;
+    padding: 63px 10px 0;
 
     background-image: linear-gradient(-5.7deg, $smoky-color, $smoky-color 60%, transparent 60%, transparent);
   }
@@ -46,9 +46,16 @@
 
     font-size: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .information__wrapper {
+  display: flex;
+  flex-direction: column;
 
   padding-top: 82px;
 
@@ -170,6 +177,7 @@
 }
 
 .information__img-wrapper {
+  order: 1;
   position: relative;
 
   width: 157px;

@@ -1,4 +1,7 @@
 .logo {
+  position: relative;
+  top: -8px;
+
   display: block;
   width: 74px;
   height: 23px;
@@ -11,6 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 10px;
     width: 147px;
   }
 }
@@ -25,6 +29,7 @@
 }
 
 .logo__svg {
+  display: block;
   margin-top: -17px;
   margin-left: -72px;
 
