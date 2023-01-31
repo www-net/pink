@@ -6,22 +6,13 @@
 
   text-align: center;
 
-  background-color: $dark-blue;
-  background-image: url("../img/app/app_background_mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 320px 465px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/app/app_background_mobile2x.jpg");
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 618px;
+    margin-top: -110px;
 
     background-image: url("../img/app/app_background_tablet@1x.jpg");
     background-position: center -40px;
-    background-size: 1200px 729px;
+    background-size: 1200px 752px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/app/app_background_tablet@2x.jpg");
@@ -53,11 +44,15 @@
 }
 
 .app__title {
-  margin: 23px 27px 28px;
+  position: relative;
+
+  margin: 23px 27px 300px;
 
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
+
+  z-index: 1;
 
   @media (max-width: $mobile-width-only) {
     br {
@@ -77,10 +72,10 @@
 }
 
 .app__img-wrapper {
-  margin-bottom: 28px;
+  position: absolute;
+  top: 179px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     bottom: -101px;
     right: -20px;
 
@@ -101,6 +96,11 @@
 
 .app__img {
   display: block;
+}
+
+.app__top {
+  min-height: 373px;
+  margin-bottom: 27px;
 }
 
 .app__button {

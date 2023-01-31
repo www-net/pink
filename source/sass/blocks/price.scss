@@ -83,15 +83,14 @@
 
       position: absolute;
       top: 0;
-      left: 0;
-
-      width: 61px;
-      height: 61px;
-
+      left: -2px;
+      width: 73px;
+      height: 75px;
       overflow: hidden;
-      background-image: url("../img/price/hit.svg");
-      background-repeat: no-repeat;
+      background-image: url(../img/price/hit.svg);
+      background-size: auto 73px;
       background-position: 0 0;
+      background-repeat: no-repeat;
     }
   }
 

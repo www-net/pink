@@ -1,17 +1,19 @@
 .main-header {
   display: flex;
   flex-direction: column;
+  align-content: flex-start;
   flex-wrap: wrap;
-
   width: 320px;
-  margin: auto;
+  min-height: 465px;
+  padding: 0;
 
   color: $basic-white;
 
-  background-color: $dark-gray;
+background-color: $dark-blue;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    align-content: stretch;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,22 +22,24 @@
     width: 1200px;
     min-height: 853px;
 
-    background-image: url("../img/header/header-back-desktop@1x.jpg");
+    background-image: url("../../img/header/header-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 2560px auto;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/header/header-back-desktop@2x.jpg");
-    background-position: center 10px;
-
+      background-image: url("../../img/header/header-back-desktop@2x.jpg");
+      background-position: center top;
     }
   }
 }
 
-.main-header__wrapper {
+.main-header__top {
   position: relative;
 
+  width: 100%;
+
+  background-color: rgba(0, 0, 0, .3);
   z-index: 1;
 
   @media (min-width: $desktop-width) {
@@ -43,11 +47,7 @@
   }
 }
 
-.main-header__wrapper--closed {
-  background-color: rgba($basic-black, 30%);
-}
-
-.main-header__wrapper--opened {
+.main-header__top--opened {
   background-color: $dark-gray;
 
   @media (min-width: $desktop-width) {
@@ -55,7 +55,7 @@
   }
 }
 
-.main-header__container {
+.main-header__box {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -81,5 +81,18 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.main-header__bottom {
+  margin-top: -70px;
+  padding-top: 70px;
+
+  background-image: url("../../img/header/header_background_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center 3px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/header/header_background_mobile.jpg");
   }
 }
