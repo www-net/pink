@@ -39,7 +39,7 @@
 
   width: 100%;
 
-  background-color: rgba(0, 0, 0, .3);
+  background-color: $basic-black--30;
   z-index: 1;
 
   @media (min-width: $desktop-width) {
