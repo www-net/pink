@@ -9,7 +9,7 @@
 
   color: $basic-white;
 
-background-color: $dark-blue;
+  background-color: $dark-blue;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -93,6 +93,20 @@ background-color: $dark-blue;
   background-position: center 3px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/header/header_background_mobile.jpg");
+    background-image: url("../../img/header/header_background_mobile2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -108px;
+    padding-top: 108px;
+
+    background-image: url("../../img/header/header_background_tablet@1x.jpg");
+    background-position: center -2px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/header/header_background_tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }

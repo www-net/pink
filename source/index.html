@@ -83,22 +83,30 @@
             <h2 class="app__title">Взгляните на жизнь иначе!</h2>
             <div class="app__img-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="./img/app/pink_screen_desktop@1x.webp 1x, ./img/app/pink_screen_desktop@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="./img/app/pink_screen_desktop@1x.png 1x, ./img/app/pink_screen_desktop@2x.png 2x">
+                <source type="image/webp" media="(min-width: 660px)" sizes="(min-width: 660px) 700px"
+                  srcset="./img/app/pink_screen_tablet@1x.webp 1x, ./img/app/pink_screen_tablet@2x.webp 2x">
                 <source media="(min-width: 660px)"
                   srcset="./img/app/pink_screen_tablet@1x.png 1x, ./img/app/pink_screen_tablet@2x.png 2x">
+                <source type="image/webp"
+                  srcset="./img/app/pink_screen_mobile@1x.webp 1x, ./img/app/pink_screen_mobile@2x.webp 2x">
                 <img class="app__img" src="./img/app/pink_screen_mobile@1x.png"
                   srcset="./img/app/pink_screen_mobile@2x.png 2x" alt="Мобилный с розовой картинкой на дисплее">
               </picture>
             </div>
           </div>
-          <button class="app__button">Скачать приложение</button>
-          <ul class="app__list">
-            <li class="app__item"><a class="app__link app__link-apple" href="#"></a></li>
-            <li class="app__item"><a class="app__link app__link-android" href="#"></a></li>
-            <li class="app__item"><a class="app__link app__link-microsoft" href="#"></a></li>
-          </ul>
-          <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="app__bottom">
+            <button class="app__button">Скачать приложение</button>
+            <ul class="app__list">
+              <li class="app__item"><a class="app__link app__link-apple" href="#"></a></li>
+              <li class="app__item"><a class="app__link app__link-android" href="#"></a></li>
+              <li class="app__item"><a class="app__link app__link-microsoft" href="#"></a></li>
+            </ul>
+            <p class="app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
     </div>
@@ -120,15 +128,20 @@
             <source media="(min-width: 660px)"
               srcset="img/information/iphone-screen-tablet@1x.png 1x, img/information/iphone-screen-tablet@2x.png 2x">
             <img class="information-img" src="img/information/iphone-screen-mobile@1x.png"
-              srcset="img/information/iphone-screen-mobile@2x.png 2x" alt="">
+              srcset="img/information/iphone-screen-mobile@2x.png 2x"
+              alt="изображение белого смайла на розовом экране телефона">
           </picture>
         </div>
         <ul class="information__list">
           <li class="information__item">
             <h3 class="information__title">Поднимает настроение</h3>
             <div class="inforemation__desktop-image">
-              <img class="information__phone-img" src="img/information/iphone-screen-1-desktop@1x.png"
-                srcset="img/information/iphone-screen-1-desktop@2x.png 2x" alt="телефон с серым экраном">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/information/iphone-screen-1-desktop@1x.png 1x, img/information/iphone-screen-1-desktop@2x.png 2x">
+                <img class="information__phone-img" src="" alt="телефон с серым изображением на экране">
+              </picture>
+
             </div>
             <p class="information__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько
@@ -137,8 +150,11 @@
           <li class="information__item">
             <h3 class="information__title">Меняет мир вокруг</h3>
             <div class="inforemation__desktop-image">
-              <img class="information__phone-img" src="img/information/iphone-screen-2-desktop@1x.png"
-                srcset="img/information/iphone-screen-2-desktop@2x.png 2x" alt="телефон с розовым экраном">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/information/iphone-screen-2-desktop@1x.png 1x, img/information/iphone-screen-2-desktop@2x.png 2x">
+                <img class="information__phone-img" src="" alt="телефон с розовым экраном">
+              </picture>
             </div>
             <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               <span><br> усилить эффект</span>
@@ -147,9 +163,12 @@
           <li class="information__item">
             <h3 class="information__title">Заводит новых друзей</h3>
             <div class="inforemation__desktop-image">
-              <img class="information__phone-img" src="img/information/iphone-screen-3-desktop@1x.png"
-                srcset="img/information/iphone-screen-3-desktop@2x.png 2x"
-                alt="телефон с розовым экраном и улыбающимся смайлом">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/information/iphone-screen-2-desktop@1x.png 1x, img/information/iphone-screen-3-desktop@2x.png 2x">
+                <img class="information__phone-img" src="" alt="телефон с розовым экраном и улыбающимся смайлом">
+              </picture>
+
             </div>
             <p class="information__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>

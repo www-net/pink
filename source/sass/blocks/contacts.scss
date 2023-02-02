@@ -15,6 +15,7 @@
     row-gap: 33px;
 
     width: 660px;
+    margin-bottom: 3px;
     padding-top: 44px;
   }
 
@@ -26,6 +27,14 @@
 
 .contacts__list {
   @include reset-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 70px;
+    row-gap: 22px;
+  }
 }
 
 .contacts__questions {

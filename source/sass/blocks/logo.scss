@@ -8,6 +8,8 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
+    top: -8px;
+
     width: 145px;
     height: 40px;
   }

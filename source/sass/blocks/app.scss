@@ -1,37 +1,19 @@
 .app {
   position: relative;
 
-  margin-top: -70px;
-  padding-top: 70px;
-
   text-align: center;
 
-  @media (min-width: $tablet-width) {
-    min-height: 618px;
-    margin-top: -110px;
-
-    background-image: url("../img/app/app_background_tablet@1x.jpg");
-    background-position: center -40px;
-    background-size: 1200px 752px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/app/app_background_tablet@2x.jpg");
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    margin-top: -95px;
-
-    background-image: none;
-    background-color: transparent;
-  }
+  overflow: hidden;
 }
 
 .app__wrapper {
+  display: grid;
+  grid-template-rows: min-content;
+
   @media (min-width: $tablet-width) {
     max-width: 300px;
-    margin-top: 93px;
+    min-height: 526px;
+    margin-top: 70px;
     margin-left: 20px;
     margin-bottom: 21px;
   }
@@ -43,10 +25,19 @@
   }
 }
 
+.app__top {
+  position: relative;
+  min-height: 395px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 0;
+  }
+}
+
 .app__title {
   position: relative;
 
-  margin: 23px 27px 300px;
+  margin: 23px 27px;
 
   font-size: 24px;
   line-height: 120%;
@@ -61,26 +52,23 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
-
-    margin: 23px 35px 36px;
+    margin: 23px 35px 30px;
     max-width: 300px;
 
-    line-height: 136%;
-    font-size: 50px;
+    line-height: 120%;
+    font-size: 40px;
   }
 }
 
 .app__img-wrapper {
   position: absolute;
-  top: 179px;
+  top: 110px;
 
   @media (min-width: $tablet-width) {
-    bottom: -101px;
-    right: -20px;
+    top: 2px;
+    left: -40px;
 
     width: 700px;
-    height: 618px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,9 +86,12 @@
   display: block;
 }
 
-.app__top {
-  min-height: 373px;
-  margin-bottom: 27px;
+.app__bottom {
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .app__button {
@@ -123,17 +114,12 @@
     position: relative;
 
     min-width: 300px;
-
     margin-bottom: 46px;
+
+    font-size: 18px;
+
     background-color: transparent;
-
     z-index: 2;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 67px;
-
-    font-size: 21px;
   }
 }
 
@@ -154,7 +140,7 @@
     margin-bottom: 33px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 53px;
   }
 }
