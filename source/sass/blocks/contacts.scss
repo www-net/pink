@@ -21,7 +21,10 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
-    margin-bottom: 72px;
+    margin-bottom: 15px;
+    padding-top: 0;
+    row-gap: 40px;
+
   }
 }
 
@@ -58,6 +61,8 @@
   @media (min-width: $desktop-width) {
     width: 480px;
     padding: 0 230px;
+
+    font-size: 50px;
   }
 }
 
@@ -74,6 +79,14 @@
       margin-top: -10px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__email {
+  order: 1;
 }
 
 .contacts__caption {
@@ -83,6 +96,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
   }
 }
 

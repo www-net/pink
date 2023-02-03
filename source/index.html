@@ -87,7 +87,7 @@
                   srcset="./img/app/pink_screen_desktop@1x.webp 1x, ./img/app/pink_screen_desktop@2x.webp 2x">
                 <source media="(min-width: 1200px)"
                   srcset="./img/app/pink_screen_desktop@1x.png 1x, ./img/app/pink_screen_desktop@2x.png 2x">
-                <source type="image/webp" media="(min-width: 660px)" sizes="(min-width: 660px) 700px"
+                <source type="image/webp" media="(min-width: 660px)"
                   srcset="./img/app/pink_screen_tablet@1x.webp 1x, ./img/app/pink_screen_tablet@2x.webp 2x">
                 <source media="(min-width: 660px)"
                   srcset="./img/app/pink_screen_tablet@1x.png 1x, ./img/app/pink_screen_tablet@2x.png 2x">
@@ -120,7 +120,7 @@
       <h2 class="visually-hidden">Особенности</h2>
       <div class="information__slogans">
         <p class="information__paragraph">Устали от серости мегаполиса?</p>
-        <p class="information__paragraph">Нам есть, что вам<br> предложить!</p>
+        <p class="information__paragraph">Нам есть, что вам<br>&#32; предложить!</p>
       </div>
       <div class="information__wrapper">
         <div class="information__img-wrapper">
@@ -156,8 +156,7 @@
                 <img class="information__phone-img" src="" alt="телефон с розовым экраном">
               </picture>
             </div>
-            <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              <span><br> усилить эффект</span>
+            <p class="information__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br>&#32; усилить эффект
             </p>
           </li>
           <li class="information__item">
@@ -186,8 +185,8 @@
         </picture>
 
         <div class="banner__wrapper">
-          <h3 class="banner__title">Эффект<br> на 24 часа!</h3>
-          <p class="banner__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от
+          <h3 class="banner__title">Эффект<br>&#32; на 24 часа!</h3>
+          <p class="banner__text">Британские ученые провели исследования и доказали, что положительный эффект<br>&#32; от
             использования приложения длится целые сутки!</p>
           <a class="banner__link" href="#">Узнать больше об исследовании</a>
         </div>
@@ -199,7 +198,7 @@
       <div class="reviews__list">
         <blockquote class="reviews__item">
           <cite class="reviews-title">Николай Петров</cite>
-          <p class="reviews__function">25 лет, водитель трамвая</p>
+          <p class="reviews__speciality">25 лет, водитель трамвая</p>
           <p class="reviews__text">
             «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я
             познакомился со своей будущей женой в комментариях к выложенной фотографии!»
@@ -293,7 +292,7 @@
           <b class="contacts__caption">Звоните:</b>
           <a class="contacts__info" href="tel:+7812555666">+7 (812) 555-66-66</a>
         </li>
-        <li class="contacts__item">
+        <li class="contacts__item contacts__email">
           <b class="contacts__caption">Пишите:</b>
           <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </li>
@@ -335,7 +334,10 @@
 
   <footer class="main-footer container">
     <div class="main-footer__logo">
-      <img class="main-footer__img" width="145" height="40" src="img/footer/logotype-blue-tablet.svg" alt="">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/footer/logotype-blue-desktop.svg">
+        <img class="main-footer__img" width="145" height="40" src="img/footer/logotype-blue-tablet.svg" alt="логотип">
+      </picture>
     </div>
     <ul class="main-footer__list social">
       <li class="social__item">
@@ -348,10 +350,10 @@
         <a class="social-link social__link--youtube" href="#"></a>
       </li>
     </ul>
-    <div class="main-footer__copyright copyright">
-      <b class="copyright__title">Разработано</b>
-      <div class="copyright__logo-academy">
-        <a class="copyright__academy-link" href="#">
+    <div class="main-footer__copyright">
+      <b class="main-footer__copyright-title">Разработано</b>
+      <div class="main-footer__copyright-logo-academy">
+        <a class="main-footer__copyright-academy-link" href="#">
           <img class="main-footer__academy-img" src="img/footer/html_academy.svg" alt="">
         </a>
       </div>

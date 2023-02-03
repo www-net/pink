@@ -1,6 +1,8 @@
 .app {
   position: relative;
 
+  height: 100%;
+
   text-align: center;
 
   overflow: hidden;
@@ -19,7 +21,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 100px;
     margin-left: 95px;
     max-width: 370px;
   }
@@ -58,6 +59,13 @@
     line-height: 120%;
     font-size: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 30px 35px 36px;
+
+    font-size: 50px;
+    line-height: 136%;
+  }
 }
 
 .app__img-wrapper {
@@ -72,8 +80,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 0;
-    right: -731px;
+    top: 27px;
+    left: 52px;
 
     margin-bottom: 0;
 
@@ -120,6 +128,12 @@
 
     background-color: transparent;
     z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 68px;
+
+    font-size: 21px;
   }
 }
 

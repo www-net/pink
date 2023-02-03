@@ -1,13 +1,18 @@
 .banner {
   display: none;
   margin: auto;
+  margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     display: block;
+  margin-bottom: 93px;
+
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+  margin-bottom: 0;
+
     padding-bottom: 60px;
 
     background-color: $smoky-color;
@@ -33,6 +38,14 @@
 
 .banner__img {
   margin-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
+  }
 }
 
 .banner__wrapper {
@@ -55,11 +68,13 @@
   font-weight: 700;
   line-height: 36px;
 
+  @media (min-width: $tablet-width) {
+    padding: 55px 0 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 23px;
-    padding-top: 118px;
-
-    font-size: 31px;
+    padding-top: 119px;
 
     br {
       display: none;

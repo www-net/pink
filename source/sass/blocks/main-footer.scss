@@ -17,6 +17,8 @@
 
   @media (min-width: $desktop-width) {
     width: 960px;
+    padding-bottom: 66px;
+
   }
 }
 
@@ -48,53 +50,41 @@
     margin: 0;
     margin-right: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: -8px;
+  }
 }
 
-.social-link {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-
-  border-radius: 50%;
-  border: 3px solid $dark-gray--10;
-
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-
-.social__link--twitter {
-  background-image: url("../img/footer/twitter.svg");
-}
-
-.social__link--facebook {
-  background-image: url("../img/footer/facebook.svg");
-}
-
-.social__link--youtube {
-  background-image: url("../img/footer/youtube.svg");
-  background-position: 19px center;
-}
-
-.copyright {
+.main-footer__copyright {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 16px;
+
+  @media (min-width: $desktop-width) {
+    gap: 13px;
+  }
 }
 
-.copyright__title {
+.main-footer__copyright-title {
   display: inline-block;
   margin-bottom: 5px;
 
   font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 9px;
+
+    font-size: 18px;
+  }
 }
 
-.copyright__academy-link {
+.main-footer__copyright-academy-link {
   display: inline-block;
 }
 
-.copyright__academy-img {
+.main-footer__copyright-academy-img {
   padding-top: 1px;
 }
