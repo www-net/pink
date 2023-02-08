@@ -135,6 +135,16 @@
 
     font-size: 21px;
   }
+
+  &:hover {
+    color: $pink-color;
+
+    background-color: $basic-white;
+  }
+}
+
+.app__btn-text:active {
+  opacity: 0.3;
 }
 
 .app__list {

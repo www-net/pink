@@ -129,6 +129,14 @@
   border: none;
   border-radius: 50%;
   background-color: $dark-gray--30;
+
+  &:hover {
+    background-color: $dark-gray--60;
+  }
+
+  &:active {
+    background-color: $dark-gray--10;
+  }
 }
 
 .reviews__button--current {
