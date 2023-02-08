@@ -89,6 +89,18 @@
   order: 1;
 }
 
+.contacts__email a:hover {
+  color: $dark-gray;
+
+  text-decoration: underline;
+}
+
+.contacts__email a:active {
+  color: $dark-gray--30;
+
+  text-decoration: none;
+}
+
 .contacts__caption {
   font-size: 18px;
   font-weight: 700;
@@ -109,4 +121,5 @@
   line-height: normal;
   text-decoration: none;
   color: $pink-color;
+  font-style: normal;
 }
