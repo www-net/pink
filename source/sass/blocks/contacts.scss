@@ -88,13 +88,13 @@
   order: 1;
 }
 
-.contacts__email a:hover {
+.contacts__item a:hover {
   color: $dark-gray;
 
   text-decoration: underline;
 }
 
-.contacts__email a:active {
+.contacts__item a:active {
   color: $dark-gray--30;
 
   text-decoration: none;

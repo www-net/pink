@@ -50,3 +50,28 @@ img {
     line-height: 68px;
   }
 }
+
+.toggle {
+  box-sizing: content-box;
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: $dark-gray--30;
+
+  &:hover {
+    background-color: $dark-gray--60;
+  }
+
+  &:active {
+    background-color: $dark-gray--10;
+  }
+
+  &--current {
+    border: 3px solid $dark-gray;
+    background-color: $basic-white;
+  }
+}

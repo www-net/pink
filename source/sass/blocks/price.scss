@@ -247,19 +247,3 @@
     display: none;
   }
 }
-
-.price__button {
-  box-sizing: content-box;
-  width: 6px;
-  height: 6px;
-  padding: 0;
-
-  border: none;
-  border-radius: 50%;
-  background-color: $dark-gray--30;
-
-  &--current {
-    border: 3px solid $dark-gray;
-    background-color: $basic-white;
-  }
-}

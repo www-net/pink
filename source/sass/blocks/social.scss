@@ -37,18 +37,19 @@
 }
 
 .social__link--telegram::before {
-  top: 11px;
-  left: 10px;
+  top: 12px;
+  left: 11px;
 
-  background-image: url("../../img/footer/telegram.svg");
+  background-image: url("../img/footer/telegram.svg");
 }
 
 .social__link--vk::before {
-  background-image: url("../../img/footer/vk.svg");
+  background-image: url("../img/footer/vk.svg");
 }
 
 .social__link--youtube::before {
-  top: 2px;
+  top: 0;
+  left: 1px;
 
-  background-image: url("../../img/footer/youtube.svg");
+  background-image: url("../img/footer/youtube.svg");
 }
